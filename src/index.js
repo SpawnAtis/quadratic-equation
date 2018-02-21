@@ -5,13 +5,12 @@ module.exports = function solveEquation(equation) {
         c = +(splitEquation[7] + splitEquation[8]);
 
     let D = (b * b) - 4 * a * c;
-    if (D < 0) { console.log('The roots are complex numbers'); return }
+    if(D < 0) { console.log('The roots are complex numbers'); return }
 
     let x1, x2;
-    if (!D) {
+    if(D < 0) {
         x1 = x2 = - (b / (2*a));
     } else {
-        if (b > 0 && c > 0)
         x1 = (-b + Math.sqrt(D)) / (2 * a);
         x2 = (-b - Math.sqrt(D)) / (2 * a);
     }
