@@ -8,7 +8,7 @@ module.exports = function solveEquation(equation) {
     if(D < 0) { console.log('The roots are complex numbers'); return }
 
     let x1, x2;
-    if(D < 0) {
+    if(!D) {
         x1 = x2 = - (b / (2*a));
     } else {
         x1 = (-b + Math.sqrt(D)) / (2 * a);
